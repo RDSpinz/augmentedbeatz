@@ -52,8 +52,8 @@ public class Interactible : MonoBehaviour
         for (int i = 0; i < defaultMaterials.Length; i++)
         {
             // 2.d: Uncomment the below line to highlight the material when gaze enters.
-            defaultMaterials[i].SetFloat("_Highlight", .5f);
-            GetComponent<Renderer>().material.color = new Color(255, 0, 0);
+           // defaultMaterials[i].SetFloat("_Highlight", .5f);
+            GetComponent<Renderer>().material.color = new Color(0, 0, 255);
             
         }
     }
@@ -65,7 +65,7 @@ public class Interactible : MonoBehaviour
         {
             // 2.d: Uncomment the below line to remove highlight on material when gaze exits.
             //defaultMaterials[i].SetFloat("_Highlight", 0f);
-            this.GetComponent<Renderer>().material.color = new Color(191, 255, 174);
+            GetComponent<Renderer>().material.color = new Color(0, 255, 0);
         }
     }
 
@@ -74,7 +74,7 @@ public class Interactible : MonoBehaviour
         for (int i = 0; i < defaultMaterials.Length; i++)
         {
             //defaultMaterials[i].SetFloat("_Highlight", .5f);
-            this.GetComponent<Renderer>().material.color = new Color(0, 255, 255);
+             this.GetComponent<Renderer>().material.color = new Color(255, 0, 0);
 
         }
 
